@@ -45,7 +45,7 @@ jobs:
       - run: mvn integration-test
 
       - store_artifacts:
-        path: target/herokudemo.jar
+          path: target/herokudemo.jar
 
   deploy:
     docker:
