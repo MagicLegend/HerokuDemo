@@ -53,6 +53,7 @@ public class HerokudemoApplicationTests {
                 .andExpect(status().isOk()).andReturn();
 
         LOGGER.log(Level.INFO, "I got back: {0}", result.getResponse().getContentAsString());
-        assertEquals("[{\"id\":1,\"crumbly\":true,\"topping\":\"Chocolate\"}]", result.getResponse().getContentAsString());
+//        assertEquals("[{\"id\":1,\"crumbly\":true,\"topping\":\"Chocolate\"}]", result.getResponse().getContentAsString());
+        assertEquals("[{\"id\":1,\"crumbly\":true,\"topping\":\"Chocolate\"},{\"id\":2,\"crumbly\":true,\"topping\":\"Chocolate\"}]", result.getResponse().getContentAsString());
     }
 }
