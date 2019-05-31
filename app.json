@@ -1,0 +1,27 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ],
+  "env": {
+    "security_oauth2_client_client-id": {
+      "generator": "secret"
+    },
+    "spring_jpa_properties_hibernate_dialect": {
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "HerokuDemo",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
